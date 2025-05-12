@@ -1,0 +1,144 @@
+
+
+/* Title styling */
+.title {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+}
+
+/* Profile card container */
+.profileCard {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: transform 0.2s ease;
+}
+
+.profileCard:hover {
+  transform: translateY(-5px);
+}
+
+/* Profile item styling */
+.profileItem {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.profileItem:last-child {
+  border-bottom: none;
+}
+
+/* Label styling */
+.label {
+  font-weight: 600;
+  min-width: 150px;
+  color: #444;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Value styling */
+.profileValue {
+  color: #666;
+  font-family: 'Arial', sans-serif;
+  flex: 1;
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.2rem;
+  color: #555;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Error state */
+.error {
+  text-align: center;
+  padding: 20px;
+  color: #d32f2f;
+  font-size: 1.2rem;
+  font-family: 'Arial', sans-serif;
+  background: #ffebee;
+  border-radius: 8px;
+}
+
+/* Button styling (for Ant Design buttons) */
+.buttonPrimary {
+  border-radius: 6px;
+  background: #1890ff;
+  border: none;
+  padding: 8px 20px;
+  font-size: 1rem;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.buttonPrimary:hover {
+  background: #40a9ff;
+}
+
+.buttonDefault {
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  color: #555;
+  padding: 8px 20px;
+  font-size: 1rem;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.buttonDefault:hover {
+  border-color: #1890ff;
+  color: #1890ff;
+}
+
+/* Form input styling */
+.formItemLabel > label {
+  font-weight: 600;
+  color: #444;
+}
+
+.input {
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #1890ff;
+  box-shadow: 0 0 5px rgba(24, 144, 255, 0.2);
+}
+
+/* Form layout */
+.formVertical .formItem {
+  margin-bottom: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  .profileCard {
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .label {
+    min-width: 120px;
+  }
+}

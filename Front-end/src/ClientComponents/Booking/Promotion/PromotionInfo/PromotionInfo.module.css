@@ -1,0 +1,15 @@
+.flexBox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.pointBox {
+  margin-top: 5px;
+}
+
+.promotionPrice,
+.pointPrice,
+.pointTitle {
+  font-weight: 600;
+}

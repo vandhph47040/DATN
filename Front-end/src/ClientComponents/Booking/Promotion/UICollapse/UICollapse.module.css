@@ -1,0 +1,72 @@
+.promotionCollapse {
+  margin-left: -12px;
+}
+
+.yourPoint {
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: var(--border-color);
+}
+
+.currentpoint {
+  color: black;
+  font-weight: 400;
+}
+
+.inputNumber {
+  width: 175px;
+}
+
+.promotionNote {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.promotionInfo {
+  margin-top: 10px;
+}
+
+.promotionRate {
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.range {
+  /* color: var(--border-color); */
+  font-weight: 600;
+}
+
+.promotionMember {
+  margin-left: 15px;
+}
+
+.warning {
+  display: block;
+  color: red;
+}
+
+.normalRank {
+  color: var(--normal-rank);
+}
+
+.goldRank {
+  color: var(--first-rank);
+}
+
+.diamondRank {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.normalRank,
+.goldRank,
+.diamondRank {
+  font-weight: 600;
+}
+
+.rankUser {
+  text-transform: capitalize;
+}

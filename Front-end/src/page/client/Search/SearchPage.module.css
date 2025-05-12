@@ -1,0 +1,88 @@
+.searchPageContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.searchHeader {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.searchHeader h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.searchInput {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.searchResultsContainer {
+  margin-top: 30px;
+}
+
+.searchResultsContainer h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.movieGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.movieCard {
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.movieCard:hover {
+  transform: translateY(-5px);
+}
+
+.moviePoster {
+  height: 300px;
+  object-fit: cover;
+}
+
+.movieDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .movieGrid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .moviePoster {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movieGrid {
+    grid-template-columns: 1fr;
+  }
+}

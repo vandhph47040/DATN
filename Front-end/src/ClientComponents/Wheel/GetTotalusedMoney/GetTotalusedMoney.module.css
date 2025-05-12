@@ -1,0 +1,42 @@
+.container {
+    position: relative;
+}
+
+.btnPlay {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 14px 20px;
+    border-radius: 16px;
+    border: 6px solid var(--primary-color);
+    background-color: var(--backgroud-product);
+    width: 210px;
+}
+
+.valueofWeek {
+    padding: 8px 16px;
+    background-color: #fdfaf6;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.suggestText {
+    white-space: nowrap;
+    position: absolute;
+    bottom: -30px;
+}
+
+.errorText {
+    display: inline-block;
+    width: 200px;
+    height: 110px;
+    padding: 12px;
+    border: 6px solid #fe4f2d;
+    border-radius: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: #fdab9e;
+    position: absolute;
+    top: 0;
+    left: -210px;
+}

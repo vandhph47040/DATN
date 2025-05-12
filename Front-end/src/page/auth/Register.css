@@ -1,0 +1,224 @@
+.register-container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.register-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+    letter-spacing: 1px;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-label {
+    display: block;
+    color: #444;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 16px;
+    color: #777;
+    z-index: 1;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px 15px 15px 50px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.form-input::placeholder {
+    color: #aaa;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #1890ff;
+    box-shadow: 0 0 0 3px rgba(24, 144, 255, 0.2);
+    background-color: #fff;
+}
+
+.register-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #1890ff 0%, #096dd9 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(24, 144, 255, 0.2);
+}
+
+.admin-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #ff4d4f 0%, #d93638 100%); /* Màu đỏ để nổi bật */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(255, 77, 79, 0.2);
+}
+
+.button-icon {
+    margin-right: 10px;
+}
+
+.register-button:hover {
+    background: linear-gradient(135deg, #40a9ff 0%, #1890ff 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(24, 144, 255, 0.3);
+}
+
+.admin-button:hover {
+    background: linear-gradient(135deg, #ff7875 0%, #ff4d4f 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 77, 79, 0.3);
+}
+
+.register-button:active,
+.admin-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(24, 144, 255, 0.2);
+}
+
+.login-link-container {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+.login-link {
+    color: #1890ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.login-link:hover {
+    color: #40a9ff;
+    text-decoration: underline;
+}
+
+.social-login-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.social-button {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.google-button {
+    border: 2px solid #ddd;
+    background-color: #fff;
+    color: #555;
+}
+
+.google-button:hover {
+    border-color: #4285f4;
+    box-shadow: 0 4px 10px rgba(66, 133, 244, 0.2);
+}
+
+.facebook-button {
+    background-color: #1877f2;
+    color: white;
+}
+
+.facebook-button:hover {
+    background-color: #3b5998;
+    box-shadow: 0 4px 10px rgba(59, 89, 152, 0.3);
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.google-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.auth-divider {
+    margin: 20px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .register-container {
+        max-width: 100%;
+        padding: 20px 15px;
+        margin: 20px;
+    }
+
+    .register-title {
+        font-size: 28px;
+    }
+
+    .form-input {
+        font-size: 14px;
+        padding: 12px 12px 12px 45px;
+    }
+
+    .register-button,
+    .admin-button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .login-link-container {
+        font-size: 14px;
+    }
+}

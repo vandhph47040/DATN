@@ -1,0 +1,193 @@
+.titleAddFilm {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--border-color);
+}
+
+.containerAddFilm {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    gap: 30px;
+}
+
+.formAddFilm {
+    width: 60%;
+    margin-right: 15px;
+}
+
+.listAddFilm {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.listProduct {
+    width: 30%;
+}
+
+.addImage,
+.addImageExcel {
+    background-color: #5cb338;
+    padding: 6px 6px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    height: 36px;
+}
+
+.addImage {
+    margin-right: 10px;
+}
+
+.spaceExcel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.addImage:hover {
+    background-color: #8ee06b;
+}
+
+.boxImages {
+    width: 308px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.fileExcel {
+    background-color: #3f7d58;
+    padding: 6px 6px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.fileExcel:hover {
+    background-color: #7cb190;
+}
+
+.iconExcel {
+    font-size: 18px;
+    margin-right: 4px;
+}
+
+.customRow {
+    height: 67px;
+}
+.genresColumn {
+    width: 180px;
+}
+
+.directorsColumn {
+    width: 95px;
+}
+
+.moviesNameOfImage {
+    width: 140px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.moviesNameOfTitle {
+    font-weight: 500;
+}
+
+.inputLabel {
+    font-weight: 500;
+}
+
+.antDrawerTitle,
+.customDrawerTitle {
+    color: var(--border-color);
+    font-size: 16px;
+}
+
+.inputDetail {
+    color: rgb(66, 66, 66) !important;
+    cursor: default;
+    border: none;
+}
+
+.imagePreview {
+    object-fit: cover;
+}
+
+.roomBox {
+    margin-bottom: 50px;
+}
+
+.roomName {
+    display: inline-block;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #e8f9ff;
+    background: var(--border-color);
+}
+
+.flexbox {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.addSubValue {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: center;
+    margin-left: auto;
+    gap: 6px;
+}
+.collapse {
+    width: 300px;
+    margin-left: auto;
+}
+
+.collapse2 {
+    margin-top: 10px;
+    position: relative;
+    border: 2px solid var(--border-color);
+    text-align: center;
+}
+
+.btnAddExcel {
+    display: flex;
+    justify-content: center;
+}
+
+.warningText {
+    padding: 8px;
+    margin-top: 80px;
+    border: 1px solid red;
+    border-radius: 6px;
+    text-align: center;
+    color: red;
+    font-weight: 500;
+}
+
+.addShowtimes {
+    position: absolute;
+    right: 55px;
+}
+
+.defaultExcel {
+    display: inline-block;
+    padding: 7px 12px;
+    border: 2px solid var(--backgroud-product);
+    border-radius: 8px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}

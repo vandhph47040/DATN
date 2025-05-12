@@ -1,0 +1,28 @@
+.titleOffer {
+    font-size: 18px;
+    margin-left: 3px;
+    margin-bottom: 22px;
+}
+
+.btnChangeNumber {
+    background-color: var(--border-color);
+    border: none;
+    padding: 4px 10px;
+    color: white;
+    font-size: 14px;
+}
+
+.numberDown {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.numberUp {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.renderQuantity {
+    display: block;
+    font-weight: 600;
+}

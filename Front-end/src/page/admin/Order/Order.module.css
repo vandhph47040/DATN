@@ -1,0 +1,91 @@
+.movieTitle {
+    color: var(--border-color);
+    font-weight: 600;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+}
+.orderInfo {
+    width: 55%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.section {
+    width: 55%;
+}
+
+.serviceSection {
+    width: 45%;
+}
+
+.title {
+    margin-bottom: 50px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.label {
+    min-width: 105px;
+    font-weight: 600;
+    word-spacing: 2px;
+}
+
+.value {
+    text-align: left;
+    flex: 1;
+}
+
+.valueSelect {
+    width: 110px;
+    margin-left: 5px;
+}
+
+.changeStatus {
+    padding: 6px 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--border-color);
+    cursor: pointer;
+}
+
+.titleFilm,
+.customerInfo {
+    color: var(--border-color);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.tagElement {
+    margin-right: -2px;
+}
+
+.tagStatus {
+    margin-right: -38px;
+}
+
+.tableSeats,
+.skeletonSeats {
+    margin-bottom: 40px;
+}
+
+.totalSub {
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.finalTotal {
+    font-weight: 600;
+}

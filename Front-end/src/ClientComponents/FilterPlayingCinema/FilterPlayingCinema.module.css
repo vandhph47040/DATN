@@ -1,0 +1,7 @@
+.selectOption + .selectOption {
+    margin-left: 30px;
+}
+
+.selectOption {
+    width: 160px;
+}

@@ -1,0 +1,29 @@
+.navigate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.nowing {
+    background-color: #0093e9 !important;
+    background-image: linear-gradient(181deg, #0093e9 0%, #80d0c7 100%);
+    border-bottom: 4px solid var(--primary-color) !important;
+}
+
+.film {
+    text-align: center;
+    width: 33.3%;
+    height: 60px;
+    line-height: 2.8;
+    font-size: 20px;
+    color: var(--word-color);
+    background-color: var(--border-color);
+    border-bottom: 4px solid var(--primary-color);
+}
+
+.comingFilm.film {
+    border-right: 1px solid var(--primary-color);
+    border-left: 1px solid var(--primary-color);
+}

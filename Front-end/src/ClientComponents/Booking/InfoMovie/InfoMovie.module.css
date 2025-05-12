@@ -1,0 +1,145 @@
+.infoMovie {
+    background-color: white;
+    padding: 25px 20px 40px;
+    margin-top: 20px;
+    border: 3px solid #cbcbbe;
+    clip-path: polygon(
+        0% 3%,
+        4% 3%,
+        4% 0%,
+        96% 0%,
+        96% 3%,
+        100% 3%,
+        100% 97%,
+        96% 97%,
+        96% 100%,
+        4% 100%,
+        4% 97%,
+        0% 97%
+    );
+}
+
+.bookingFilm {
+    display: flex;
+}
+
+.filmImage {
+    width: 40%;
+    min-width: 140px;
+    height: 200px;
+}
+
+.filmThumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.filmInfo {
+    margin-left: 8px;
+    position: relative;
+}
+
+.infoTitle {
+    font-weight: 700;
+    width: 220px;
+    height: 20px;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.infoGenres {
+    margin-top: 10px;
+}
+
+.genreItem {
+    display: inline-block;
+    font-size: 14px;
+    padding: 2px 5px;
+    margin-top: 3px;
+    margin-right: 3px;
+    background-color: #ececec;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.infoSub {
+    display: flex;
+    margin-top: 7px;
+}
+
+.subRated {
+    display: inline-block;
+    min-width: 30px;
+    min-height: 36px;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+}
+
+.subRoomType {
+    padding-right: 8px;
+}
+
+.bookingDetail {
+    margin-top: 15px;
+}
+
+/* Gộp các class có cùng font-weight */
+.detailTime,
+.detailDay,
+.number,
+.seatName,
+.totalLabel {
+    font-weight: 700;
+}
+
+.totalLabel {
+    height: 20px;
+    line-height: 1.4;
+}
+
+.detailDay {
+    letter-spacing: 1px;
+}
+
+/* Gộp các class có cùng display: flex và justify-content */
+.seatItem,
+.comboItem,
+.totalInfo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.seatItem {
+    margin-top: 6px;
+}
+
+.seatNumbers {
+    display: inline-flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.seatName {
+    display: inline-block;
+    max-width: 150px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+/* Gộp các class có cùng font-weight */
+.seatPrice,
+.comboPrice {
+    font-weight: 600;
+}
+
+.totalPrice {
+    color: var(--border-color);
+    font-weight: 700;
+    font-size: 18px;
+}

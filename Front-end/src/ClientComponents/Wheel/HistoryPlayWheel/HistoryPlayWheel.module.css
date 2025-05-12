@@ -1,0 +1,32 @@
+.main {
+    margin-top: 50px;
+    padding: 15px 25px 0;
+    background-color: #ffb200;
+    outline: 10px solid #fff085;
+    border-radius: 10px;
+    min-height: 130px;
+}
+
+.title {
+    margin-bottom: 20px;
+    color: #27548a;
+    font-size: 26px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.fakeTable {
+    padding-bottom: 20px;
+    background-color: rgb(240, 240, 240);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 55px;
+}
+
+.fakeTable th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.fakeTable th:last-child {
+    border-top-right-radius: 8px;
+}

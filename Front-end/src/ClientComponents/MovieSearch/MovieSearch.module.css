@@ -1,0 +1,74 @@
+.searchContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.searchInputContainer {
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  width: 100%;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.resultsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.movieCard {
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.movieCard:hover {
+  transform: translateY(-5px);
+}
+
+.moviePoster {
+  height: 380px;
+  object-fit: cover;
+}
+
+.movieDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.tagsContainer strong {
+  margin-right: 4px;
+}
+
+@media (max-width: 768px) {
+  .resultsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .moviePoster {
+    height: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resultsContainer {
+    grid-template-columns: 1fr;
+  }
+}

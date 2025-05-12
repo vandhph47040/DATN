@@ -1,0 +1,202 @@
+.infoBox {
+    background-color: var(--primary-color);
+    padding: 15px 20px;
+    border: 3px solid transparent; /* Độ dày nét đứt */
+    border-image: repeating-linear-gradient(
+            to right,
+            var(--border-color) 0px,
+            var(--border-color) 10px,
+            /* Độ dài nét */ transparent 10px,
+            transparent 22px /* Khoảng cách giữa các nét */
+        )
+        30;
+}
+
+.info {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.movieInfo,
+.bookingContent,
+.allInfo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.allInfo {
+    margin-top: 45px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.allInfo::before,
+.allInfo::after,
+.bookingContent::after,
+.bookingContent::before,
+.movieInfo::after,
+.movieInfo::before {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: white;
+    content: "";
+    display: inline-block;
+    z-index: 1;
+}
+
+.allInfo::before {
+    position: absolute;
+    bottom: -35px;
+    left: -35px;
+}
+
+.allInfo::after {
+    position: absolute;
+    bottom: -35px;
+    right: -35px;
+}
+
+.all::after {
+    width: calc(100% + 30px);
+    height: 3px;
+    display: inline-block;
+    content: " ";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: repeating-linear-gradient(
+        to right,
+        var(--border-color) 0px,
+        var(--border-color) 10px,
+        /* Độ dài nét đứt */ transparent 10px,
+        transparent 22px /* Khoảng cách giữa các nét */
+    );
+}
+
+.bookingContent {
+    margin-top: 10px;
+    position: relative;
+}
+
+.bookingContent::after {
+    position: absolute;
+    bottom: -50px;
+    left: -37px;
+}
+
+.bookingContent::before {
+    position: absolute;
+    bottom: -50px;
+    right: -37px;
+}
+
+.movieInfo,
+.totalPrice {
+    margin-top: 20px;
+}
+
+.movieInfo {
+    position: relative;
+}
+
+.movieInfo::after {
+    position: absolute;
+    top: -72px;
+    left: -32px;
+}
+
+.movieInfo::before {
+    position: absolute;
+    top: -72px;
+    right: -32px;
+}
+
+.sectionTitle {
+    width: 70px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.movieTitle,
+.showtime,
+.seatName {
+    font-weight: 700;
+}
+
+.rated {
+    display: inline-block;
+}
+
+.subBox,
+.ticketDetails {
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+}
+
+.totalPrice {
+    margin-left: 25px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    background-color: var(--border-color);
+}
+
+.all {
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.customOkButton {
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.checked {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.paragraph {
+    margin-right: 4px;
+}
+
+.selectButton {
+    display: inline-block;
+    border: 1px solid var(--border-color);
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.active::before {
+    content: "";
+    position: absolute;
+    left: 10%;
+    top: 9%;
+    width: 13px;
+    height: 12px;
+    background-color: #007bff;
+    border-radius: 2px;
+}
+
+.active::after {
+    content: "✔";
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}

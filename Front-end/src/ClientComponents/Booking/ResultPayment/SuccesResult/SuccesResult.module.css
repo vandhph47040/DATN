@@ -1,0 +1,164 @@
+.flexType {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    text-align: center;
+}
+
+.icon {
+    padding: 4px 11px;
+    border-radius: 50%;
+    font-size: 26px;
+    color: white;
+    background-color: #5cb338;
+}
+
+.successMessage {
+    margin-top: 15px;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.sessionDetails {
+    margin: 20px 0;
+}
+
+.dateItem {
+    text-align: right;
+}
+
+.orderInfo {
+    margin-top: 5px;
+}
+
+.ticketInfo {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 28px;
+    gap: 30px;
+}
+
+.movieInfo {
+    width: 45%;
+}
+
+.qrSection {
+    width: 55%;
+    height: 500px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.movieTitle {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.ageLimit {
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: white;
+    background-color: #ffb200;
+}
+
+.movieName {
+    margin-left: 10px;
+    word-spacing: 2px;
+    font-weight: 700;
+}
+
+.titleInfo {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    color: #424242;
+    font-size: 12px;
+}
+
+.roomFormat,
+.seats {
+    margin-top: 15px;
+}
+
+.combo {
+    margin-top: 25px;
+}
+
+.valueInfo {
+    font-weight: 700;
+    font-size: 16px;
+    max-width: 200px;
+}
+
+.titleInfoPrice {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.loyaltyPoints {
+    margin-top: 30px;
+    word-spacing: 2px;
+}
+
+.pointsNumber,
+.points {
+    font-weight: 700;
+}
+
+.qrCodeBox {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.qrCode {
+    background-color: aliceblue;
+    width: 160px;
+}
+.qrNote {
+    margin-top: 14px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.btnLink {
+    display: block;
+    text-align: center;
+}
+
+.homeButton {
+    padding: 10px 18px;
+    border: 1px solid transparent;
+    margin-top: 40px;
+    border-radius: 6px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--word-color);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+    cursor: pointer;
+}
+
+.saveQR {
+    width: 100px;
+    margin: 10px auto 0;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 2px solid var(--border-color);
+    font-weight: 600;
+    background-color: white;
+    color: var(--border-color);
+    cursor: pointer !important;
+}
+
+.summaryItem {
+    margin-top: 8px;
+}

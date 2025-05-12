@@ -1,0 +1,27 @@
+:global(.customImageModal .ant-modal-content) {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+:global(.customImageModal .ant-modal-body) {
+    padding: 0 !important;
+}
+
+:global(.customImageModal .ant-modal-close) {
+    top: -20px !important;
+    right: -15px !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+:global(.customImageModal .ant-modal-close-x) {
+    font-size: 20px;
+    color: black;
+}
+
+.mainModal,
+.imgModal {
+    border-radius: 25px;
+}

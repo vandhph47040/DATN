@@ -1,0 +1,95 @@
+.spaceEle {
+    margin-top: 20px;
+}
+
+.screen {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    margin: 20px auto 70px;
+    transform: perspective(300px) rotateX(-10deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+}
+
+.loadingIcon {
+    display: flex;
+    justify-content: center;
+}
+
+.seatRow {
+    display: flex;
+    gap: 48px;
+    justify-content: space-between;
+}
+
+.seat {
+    min-width: 32px;
+    padding: 3px 1px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 3px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: center;
+}
+
+.normalType {
+    background-color: #8c8c8c;
+    color: var(--word-color);
+    border: 3px solid #8c8c8c;
+}
+
+.VIPType {
+    background-color: #1890ff;
+    color: var(--word-color);
+    border: 3px solid #1890ff;
+}
+
+.SweetboxType {
+    background-color: #f5222d;
+    color: var(--word-color);
+    border: 3px solid #f5222d;
+}
+
+.rowLabel {
+    width: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.9;
+}
+
+.rowSeats {
+    width: 100%;
+    display: flex;
+}
+
+.empty {
+    background-color: white;
+    border: 3px solid white;
+    color: black;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.disabled {
+    background-color: #3e3f5b;
+    border: 3px solid #3e3f5b;
+}
+
+.updatePrice {
+    background-color: var(--backgroud-product);
+}
+
+.updateStatus {
+    border: 3px solid var(--backgroud-product);
+    color: var(--backgroud-product);
+}
+
+.noSeats {
+    display: flex;
+    justify-content: center;
+    color: red;
+}

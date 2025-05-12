@@ -1,0 +1,207 @@
+.headerClient {
+  max-width: 2500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.row {
+  height: 40px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.slogan {
+  margin-left: 10px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.network {
+  margin-right: 10px;
+}
+
+.iconNetwork {
+  margin-left: 14px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.signUp {
+  width: 120px;
+  padding: 8px 0;
+  text-align: center;
+  border-left: 1px solid var(--border-color);
+  text-decoration: none;
+  color: black;
+}
+
+.signIn {
+  width: 120px;
+  padding: 8px 0;
+  text-align: center;
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  line-height: 1.6;
+  color: white;
+}
+
+.logoSearch {
+  height: 60px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.logo {
+  width: 125px;
+  height: 75px;
+}
+
+.boxProfile {
+  cursor: pointer;
+  gap: 8px;
+  margin-right: 5px;
+}
+
+.avatar {
+  background: var(--primary-color);
+  color: var(--backgroud-product);
+}
+
+.justifyEnd {
+  justify-content: flex-end;
+}
+
+.sreach {
+  width: 380px;
+  margin-right: 20px;
+}
+
+/* Thêm CSS cho phần tử gợi ý phim */
+.searchContainer {
+  position: relative;
+  width: 380px;
+  margin-right: 20px;
+}
+
+.suggestionsDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+.suggestionItem {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.suggestionItem:hover {
+  background-color: #f5f5f5;
+}
+
+.suggestionContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.suggestionImage {
+  width: 50px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.suggestionInfo {
+  flex: 1;
+}
+
+.suggestionTitle {
+  font-weight: bold;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.suggestionGenres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.suggestionGenre {
+  font-size: 12px;
+  color: #666;
+  background-color: #f0f0f0;
+  padding: 2px 6px;
+  border-radius: 10px;
+}
+
+.viewAllResults {
+  padding: 10px;
+  text-align: center;
+  background-color: #f7f7f7;
+  color: #1890ff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.viewAllResults:hover {
+  background-color: #e6f7ff;
+}
+
+/* header.module.css */
+.noResults {
+  padding: 10px;
+  text-align: center;
+  color: #888;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: #ff4d4f;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}

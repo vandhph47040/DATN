@@ -1,0 +1,56 @@
+.paymentGateContainer {
+    margin-top: 40px;
+}
+
+.promotionSection {
+    background-color: white;
+    padding: 15px 25px;
+}
+
+.promotionTitle {
+    font-size: 18px;
+    color: #4a4a04;
+}
+
+.promotionPanel {
+    margin-left: -18px;
+    margin-top: 18px;
+}
+
+.paymentMethod {
+    background-color: white;
+    padding: 15px 25px;
+    margin-top: 20px;
+}
+
+.methodTitle {
+    font-size: 18px;
+    color: #4a4a04;
+}
+
+.paymentRadioGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 18px;
+}
+.moreInfo {
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.danger {
+    color: red;
+}
+
+.boxPaymentLogo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.imgLogo {
+    width: 34px;
+    height: 34px;
+    object-fit: cover;
+}

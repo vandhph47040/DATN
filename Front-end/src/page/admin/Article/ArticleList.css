@@ -1,0 +1,336 @@
+/* Container chính */
+.container {
+  padding: 24px;
+  background-color: #f9fafb;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header và tiêu đề */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+}
+
+.button-group .ant-btn {
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 500;
+}
+
+.button-group .ant-btn-primary {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+.button-group .ant-btn-primary:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+/* Bảng */
+.table-container {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+th,
+td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+td {
+  color: #4b5563;
+}
+
+/* Hiệu ứng hover */
+tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Cột tiêu đề */
+.title-cell {
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.title-cell:hover {
+  text-decoration: underline;
+  color: #1d4ed8;
+}
+
+/* Cột danh mục */
+.category {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #e0f2fe;
+  color: #1e40af;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Cột trạng thái */
+.status-active {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #d1fae5;
+  color: #065f46;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.status-inactive {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Nút hành động */
+td .ant-btn {
+  margin-right: 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  padding: 4px 12px;
+}
+
+td .ant-btn-danger {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+td .ant-btn-danger:hover {
+  background-color: #fef2f2;
+  border-color: #dc2626;
+  color: #dc2626;
+}
+
+/* Hiệu ứng tải */
+.loading-text {
+  text-align: center;
+  font-size: 16px;
+  color: #6b7280;
+  margin: 32px 0;
+  font-weight: 500;
+}
+
+/* Modal styling */
+.ant-modal-content {
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.ant-modal-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.ant-modal-footer {
+  border-top: none;
+  padding-top: 16px;
+}
+
+.ant-modal-footer .ant-btn {
+  border-radius: 6px;
+  padding: 8px 16px;
+}
+
+.ant-modal-footer .ant-btn-primary {
+  background-color: #2563eb;
+  border-color: #2563eb;
+}
+
+.ant-modal-footer .ant-btn-primary:hover {
+  background-color: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+/* Form fields trong modal */
+.modal-input,
+.modal-select,
+.modal-textarea {
+  margin-bottom: 16px !important;
+}
+
+.modal-input input,
+.modal-select .ant-select-selector,
+.modal-textarea textarea {
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.modal-input:hover input,
+.modal-select:hover .ant-select-selector,
+.modal-textarea:hover textarea {
+  border-color: #2563eb;
+}
+
+.modal-input:focus input,
+.modal-select-focused .ant-select-selector,
+.modal-textarea:focus textarea {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.uploaded-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 16px 0;
+  border: 1px solid #e5e7eb;
+}
+
+.error-message {
+  color: #dc2626;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .button-group {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    font-size: 13px;
+  }
+
+  .table-container {
+    margin: 0 -16px;
+    border-radius: 0;
+  }
+
+  .ant-modal-content {
+    padding: 16px;
+  }
+
+  .ant-modal-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .button-group .ant-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    font-size: 12px;
+  }
+  /* Confirmation Modal Buttons */
+  .ant-modal-confirm-btns .ant-btn {
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .ant-modal-confirm-btns .ant-btn-default {
+    border-color: #d1d5db;
+    color: #374151;
+  }
+
+  .ant-modal-confirm-btns .ant-btn-default:hover {
+    border-color: #9ca3af;
+    color: #1f2937;
+    background-color: #f3f4f6;
+  }
+
+  .ant-modal-confirm-btns .ant-btn-primary.ant-btn-danger {
+    background-color: #ef4444;
+    border-color: #ef4444;
+    color: #ffffff;
+  }
+
+  .ant-modal-confirm-btns .ant-btn-primary.ant-btn-danger:hover {
+    background-color: #dc2626;
+    border-color: #dc2626;
+    color: #ffffff;
+  }
+
+  /* Optional: Style the modal content for consistency */
+  .ant-modal-confirm .ant-modal-content {
+    border-radius: 8px;
+    padding: 24px;
+  }
+
+  .ant-modal-confirm .ant-modal-confirm-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1f2937;
+  }
+
+  .ant-modal-confirm .ant-modal-confirm-content {
+    color: #4b5563;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}

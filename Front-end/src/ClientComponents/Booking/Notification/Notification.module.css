@@ -1,0 +1,18 @@
+.customNotification {
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f6ded8 !important;
+  color: #e52020;
+}
+
+.notificationIcon {
+  color: #e52020;
+}
+
+.notificationTitle {
+  font-weight: 600;
+}
+
+.notificationTitle {
+    font-weight: 600;
+}

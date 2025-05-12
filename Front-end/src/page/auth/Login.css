@@ -1,0 +1,271 @@
+/* Đảm bảo container chính được giới hạn kích thước và căn giữa */
+.login-container {
+    max-width: 400px; /* Giới hạn chiều rộng */
+    width: 100%;
+    margin: 5rem auto; /* Căn giữa */
+    padding: 60px 20px 100px 20px; /* Điều chỉnh padding để chứa hoa anh đào */
+    background-color: #fff; /* Nền trắng */
+    border-radius: 15px; /* Bo góc nhẹ */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    position: relative; /* Để định vị bông hoa anh đào */
+    overflow: hidden; /* Tránh tràn nội dung */
+}
+
+/* Tiêu đề nổi bật và căn giữa */
+.login-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+    letter-spacing: 1px; /* Khoảng cách chữ nhẹ */
+}
+
+/* Nhóm form được cách đều */
+.form-group {
+    margin-bottom: 24px;
+}
+
+/* Nhãn của form */
+.form-label {
+    display: block;
+    color: #444;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Container cho input và icon */
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon bên trong input */
+.input-icon {
+    position: absolute;
+    left: 16px;
+    color: #777;
+    z-index: 1; /* Đảm bảo icon nằm trên nền input */
+}
+
+/* Input với thiết kế hiện đại */
+.form-input {
+    width: 100%;
+    padding: 15px 15px 15px 50px; /* Khoảng cách trái đủ chỗ cho icon */
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+    box-sizing: border-box; /* Đảm bảo padding không làm vượt kích thước */
+}
+
+/* Placeholder nhẹ nhàng */
+.form-input::placeholder {
+    color: #aaa;
+}
+
+/* Hiệu ứng khi focus vào input */
+.form-input:focus {
+    outline: none;
+    border-color: #1890ff;
+    box-shadow: 0 0 0 3px rgba(24, 144, 255, 0.2);
+    background-color: #fff;
+}
+
+/* Header của mật khẩu với layout linh hoạt */
+.password-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Link quên mật khẩu */
+.forgot-password {
+    font-size: 14px;
+    color: #1890ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+    color: #40a9ff;
+    text-decoration: underline;
+}
+/* Nút đăng nhập với gradient đẹp mắt */
+.login-button {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #1890ff 0%, #096dd9 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(24, 144, 255, 0.2); /* Đổ bóng nhẹ */
+}
+
+/* Icon bên trong nút */
+.button-icon {
+    margin-right: 10px;
+}
+
+/* Hiệu ứng hover cho nút */
+.login-button:hover {
+    background: linear-gradient(135deg, #40a9ff 0%, #1890ff 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(24, 144, 255, 0.3);
+}
+
+/* Hiệu ứng khi nhấn nút */
+.login-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(24, 144, 255, 0.2);
+}
+
+/* Container cho link đăng ký */
+.register-link-container {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Link đăng ký nổi bật */
+.register-link {
+    color: #1890ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.register-link:hover {
+    color: #40a9ff;
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .login-container {
+        max-width: 100%;
+        padding: 20px 15px 80px 15px;
+        margin: 20px;
+    }
+
+    .login-title {
+        font-size: 28px;
+    }
+
+    .form-input {
+        font-size: 14px;
+        padding: 12px 12px 12px 45px;
+    }
+
+    .login-button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .register-link-container {
+        font-size: 14px;
+    }
+}
+
+/* Tùy chỉnh cho các nút social */
+.social-login-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Khoảng cách giữa các nút */
+    margin-bottom: 20px;
+}
+
+.social-button {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.google-button {
+    border: 2px solid #ddd;
+    background-color: #fff;
+    color: #555;
+}
+
+.google-button:hover {
+    border-color: #4285f4;
+    box-shadow: 0 4px 10px rgba(66, 133, 244, 0.2);
+}
+
+.facebook-button {
+    background-color: #1877f2;
+    color: white;
+}
+
+.facebook-button:hover {
+    background-color: #3b5998;
+    box-shadow: 0 4px 10px rgba(59, 89, 152, 0.3);
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Khoảng cách giữa icon và text */
+}
+
+.google-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Tùy chỉnh divider */
+.auth-divider {
+    margin: 20px 0;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Thông báo lỗi */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Bông hoa anh đào */
+.cherry-blossom {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.cherry-blossom-icon {
+    width: 80px;
+    height: 80px;
+    animation: spin 4s linear infinite; /* Animation xoay */
+}
+
+/* Keyframes cho animation xoay */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

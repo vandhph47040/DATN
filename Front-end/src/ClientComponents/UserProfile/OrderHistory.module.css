@@ -1,0 +1,356 @@
+/* OrderHistory.module.css */
+
+/* Search section */
+.searchSection {
+  margin-bottom: 20px;
+}
+
+.searchInput {
+  width: 300px;
+}
+
+/* Button group */
+.buttonGroup {
+  margin-bottom: 20px;
+}
+
+.customButton {
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  border: none;
+  color: #ffffff;
+  transition: transform 0.2s, opacity 0.3s;
+}
+
+.customButton:hover {
+  background-image: linear-gradient(160deg, #80d0c7 0%, #0093e9 100%);
+  color: #ffffff;
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Loading and empty states */
+.loading,
+.emptyContent {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+}
+
+/* Order list */
+.orderList {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Order card (new layout with gradient background) */
+.orderCard {
+  display: flex;
+  align-items: center;
+  background-color: #9caab3;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.orderCard:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.moviePoster {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ffffff;
+}
+
+.orderContent {
+  margin-left: 20px;
+  flex: 1;
+}
+
+.movieTitle {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.info {
+  font-size: 14px;
+  color: #e6f4fa;
+  margin-bottom: 2px;
+}
+
+.info span {
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+/* Modal styles */
+.orderDetailsModal .ant-modal-content {
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.orderDetailsModal .ant-modal-header {
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  border-radius: 12px 12px 0 0;
+  padding: 16px 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.orderDetailsModal .ant-modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Style the "Đóng" button in the modal footer */
+.orderDetailsModal .ant-modal-footer .ant-btn {
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  border: none;
+  color: #ffffff;
+  border-radius: 8px;
+  transition: transform 0.2s, opacity 0.3s;
+}
+
+.orderDetailsModal .ant-modal-footer .ant-btn:hover {
+  background-image: linear-gradient(160deg, #80d0c7 0%, #0093e9 100%);
+  color: #ffffff;
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Order details in modal (modern ticket-like layout) */
+.orderDetails {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.orderDetails .orderHeader {
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
+  margin: -20px -20px 20px -20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orderDetails .orderContent {
+  padding: 0;
+}
+
+.orderDetails .movieInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.orderDetails .movieInfo img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.orderDetails .movieInfo span {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.orderDetails .roomSeats,
+.orderDetails .showInfo,
+.orderDetails .combos,
+.orderDetails .price,
+.orderDetails .status,
+.orderDetails .priceDetail,
+.orderDetails .discount, /* New class for discount */
+.orderDetails .createdAt,
+.orderDetails .paymentMethod {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #4b5563;
+  margin: 12px 0;
+  padding: 8px 0;
+  border-bottom: 1px dashed #e5e7eb;
+}
+
+.orderDetails .roomSeats strong,
+.orderDetails .showInfo strong,
+.orderDetails .combos strong,
+.orderDetails .price strong,
+.orderDetails .status strong,
+.orderDetails .priceDetail strong,
+.orderDetails .discount strong, /* Style for discount label */
+.orderDetails .createdAt strong,
+.orderDetails .paymentMethod strong {
+  font-weight: 600;
+  color: #1f2937;
+  flex: 0 0 40%;
+}
+
+.orderDetails .roomSeats span,
+.orderDetails .showInfo span,
+.orderDetails .combos span,
+.orderDetails .price span,
+.orderDetails .status span,
+.orderDetails .priceDetail span,
+.orderDetails .discount span, /* Style for discount value */
+.orderDetails .createdAt span,
+.orderDetails .paymentMethod span {
+  color: #4b5563;
+  flex: 1;
+  text-align: right;
+}
+
+.orderDetails .price span {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0093e9;
+}
+
+.orderDetails .discount span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #e91e63; /* Pink color to highlight the discount */
+}
+
+.orderDetails .status .statusBadge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.orderDetails .priceDetail span,
+.orderDetails .discount span,
+.orderDetails .createdAt span,
+.orderDetails .paymentMethod span {
+  font-weight: 500;
+}
+
+/* Status badge */
+.statusBadge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.confirmed {
+  background-color: #e6f4fa;
+  color: #0093e9;
+}
+
+.pending {
+  background-color: #fff3e0;
+  color: #ff9800;
+}
+
+.cancelled {
+  background-color: #ffe6e6;
+  color: #f44336;
+}
+
+.failed {
+  background-color: #f0f0f0;
+  color: #666;
+}
+
+/* Responsive design for modal */
+@media (max-width: 768px) {
+  .orderDetailsModal .ant-modal-content {
+    border-radius: 8px;
+  }
+
+  .orderDetailsModal .ant-modal-header {
+    padding: 12px 16px;
+  }
+
+  .orderDetailsModal .ant-modal-title {
+    font-size: 18px;
+  }
+
+  .orderDetails {
+    padding: 15px;
+  }
+
+  .orderDetails .movieInfo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .orderDetails .movieInfo span {
+    font-size: 16px;
+  }
+
+  .orderDetails .roomSeats,
+  .orderDetails .showInfo,
+  .orderDetails .combos,
+  .orderDetails .price,
+  .orderDetails .status,
+  .orderDetails .priceDetail,
+  .orderDetails .discount,
+  .orderDetails .createdAt,
+  .orderDetails .paymentMethod {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .orderDetails .roomSeats strong,
+  .orderDetails .showInfo strong,
+  .orderDetails .combos strong,
+  .orderDetails .price strong,
+  .orderDetails .status strong,
+  .orderDetails .priceDetail strong,
+  .orderDetails .discount strong,
+  .orderDetails .createdAt strong,
+  .orderDetails .paymentMethod strong {
+    flex: none;
+  }
+
+  .orderDetails .roomSeats span,
+  .orderDetails .showInfo span,
+  .orderDetails .combos span,
+  .orderDetails .price span,
+  .orderDetails .status span,
+  .orderDetails .priceDetail span,
+  .orderDetails .discount span,
+  .orderDetails .createdAt span,
+  .orderDetails .paymentMethod span {
+    text-align: left;
+  }
+}

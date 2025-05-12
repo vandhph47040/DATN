@@ -1,0 +1,38 @@
+.container {
+    margin-top: 50px;
+    text-align: center;
+    height: 300px;
+}
+
+.icon {
+    padding: 6px 13px;
+    border-radius: 50%;
+    font-size: 26px;
+    color: white;
+    background-color: #bf3131;
+}
+.title {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.message {
+    margin-top: 15px;
+}
+.btnLink {
+    display: block;
+    text-align: center;
+}
+.homeButton {
+    padding: 10px 18px;
+    border: 1px solid transparent;
+    margin-top: 40px;
+    border-radius: 6px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--word-color);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+    cursor: pointer;
+}

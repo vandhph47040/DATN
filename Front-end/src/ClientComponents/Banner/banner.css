@@ -1,0 +1,116 @@
+.banner-box {
+    margin-bottom: 80px;
+}
+
+.swiper {
+    width: 100%;
+    height: 300px;
+    overflow: visible !important;
+    position: relative;
+}
+
+.slide-overlay {
+    position: absolute;
+    height: 440px;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.slide-overlay.left {
+    left: 0;
+    background: black;
+}
+
+.slide-overlay.right {
+    right: 0;
+    background: black;
+}
+
+.custom-slide {
+    width: calc(100% - 400px);
+    max-width: 1250px;
+    height: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.swiper-slide img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    color: var(--border-color);
+    border-radius: 999px;
+    width: 40px;
+    height: 40px;
+    z-index: 0;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 0px -1px 1px #005cbb;
+}
+
+.swiper-button-prev {
+    left: calc((100% - min(1250px, 100% - 400px)) / 2 - 40px);
+    top: 68%;
+    transform: translateY(50%);
+}
+
+.swiper-button-next {
+    right: calc((100% - min(1250px, 100% - 400px)) / 2 - 40px);
+    top: 68%;
+    transform: translateY(50%);
+}
+
+.swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    background-color: gray;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white;
+    opacity: 1;
+}
+
+.swiper-pagination {
+    bottom: -160px !important; /* Điều chỉnh khoảng cách so với slider */
+}
+
+.banner-box .promotion {
+    margin: 170px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 400px);
+    max-width: 1250px;
+}
+
+.promotion-1,
+.promotion-2 {
+    width: 510px;
+    height: 100px;
+    background-color: white;
+}
+
+.promotion .promotion-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

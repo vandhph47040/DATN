@@ -1,0 +1,189 @@
+.titleAddFilm {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--border-color);
+}
+
+/* Container chính */
+.containerAddFilm {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  gap: 30px;
+}
+
+/* Form */
+.formAddFilm {
+  width: 60%;
+  margin-right: 15px;
+}
+
+/* List */
+.listAddFilm {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.listProduct {
+  width: 30%;
+}
+
+/* Nút thêm ảnh */
+.addImage {
+  background-color: #5cb338;
+  padding: 6px 6px;
+  border-radius: 6px;
+  color: white;
+  height: 38px;
+  margin-right: 10px;
+}
+
+.addImage:hover {
+  background-color: #8ee06b;
+}
+
+.addBtnForm {
+  margin-bottom: 15px;
+}
+
+.customRow {
+  height: 67px;
+}
+
+.genresColumn {
+  width: 180px;
+}
+
+.directorsColumn {
+  width: 95px;
+}
+
+.moviesNameOfImage {
+  width: 140px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.moviesNameOfTitle {
+  font-weight: 500;
+}
+
+.inputLabel {
+  font-weight: 500;
+}
+
+.antDrawerTitle,
+.customDrawerTitle {
+  color: var(--border-color);
+  font-size: 16px;
+}
+
+.inputDetail {
+  color: rgb(66, 66, 66) !important;
+  cursor: default;
+  border: none;
+}
+
+.imagePreview {
+  object-fit: cover;
+}
+
+.roomBox {
+  margin-bottom: 50px;
+}
+
+.roomName {
+  display: inline-block;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  border-radius: 6px;
+  font-size: 18px;
+  color: #e8f9ff;
+  background: var(--border-color);
+}
+
+.flexbox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+/* CSS mới cho bảng và nút */
+.tableImage {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* Trạng thái đã xóa mềm */
+.softDeleted {
+  background-color: #fff1f0 !important; /* Màu nền đỏ nhạt */
+  color: #ff4d4f !important; /* Màu chữ đỏ */
+  text-decoration: line-through; /* Gạch ngang text */
+}
+
+/* Trạng thái hoạt động */
+:where(.css-dev-only-do-not-override-1xg9z9n).ant-table-wrapper
+  .ant-table-tbody
+  > tr:not(.softDeleted) {
+  background-color: #f6ffed !important; /* Màu xanh lá nhạt */
+  color: #52c41a; /* Màu chữ xanh lá */
+}
+
+/* Nút sửa */
+.ant-btn:has(.anticon-edit) {
+  background-color: #1890ff; /* Màu xanh */
+  border-color: #1890ff;
+  color: white;
+}
+
+.ant-btn:has(.anticon-edit):hover {
+  background-color: #40a9ff; /* Màu xanh sáng hơn khi hover */
+  border-color: #40a9ff;
+  color: white;
+}
+
+/* Nút xóa mềm */
+.ant-btn-dashed:has(.anticon-eye-invisible) {
+  background-color: #ff4d4f; /* Màu đỏ */
+  border-color: #ff4d4f;
+  color: white;
+}
+
+.ant-btn-dashed:has(.anticon-eye-invisible):hover {
+  background-color: #ff7875; /* Màu đỏ sáng hơn khi hover */
+  border-color: #ff7875;
+  color: white;
+}
+
+/* Nút khôi phục */
+.ant-btn-dashed:has(.anticon-undo) {
+  background-color: #faad14; /* Màu vàng */
+  border-color: #faad14;
+  color: white;
+}
+
+.ant-btn-dashed:has(.anticon-undo):hover {
+  background-color: #ffc107; /* Màu vàng sáng hơn khi hover */
+  border-color: #ffc107;
+  color: white;
+}
+
+/* Nút xóa mềm nhiều */
+.ant-btn-dashed:has(.anticon-eye-invisible):not(:has(.anticon-undo)) {
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+  color: white;
+}
+
+.ant-btn-dashed:has(.anticon-eye-invisible):not(:has(.anticon-undo)):hover {
+  background-color: #ff7875;
+  border-color: #ff7875;
+  color: white;
+}

@@ -1,0 +1,83 @@
+.lineChart {
+    height: 300px;
+}
+
+.titleTable {
+    margin: 40px 0 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.titleFilm {
+    color: var(--border-color);
+    font-weight: 600;
+}
+
+.columnChart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 36px;
+}
+
+.chartTicket {
+    width: 50%;
+}
+
+.chartFilm {
+    width: 50%;
+}
+
+.progress {
+    width: 50%;
+}
+
+.box {
+    margin-top: -145px;
+    text-align: center;
+}
+.tileChart {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.secoudRowChart {
+    margin-top: 30px;
+}
+
+.btnAction {
+    display: flex;
+    gap: 15px;
+}
+
+.cardsTitle {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.statisticsInfo {
+    height: 120px;
+}
+
+.statisticsInfo1,
+.statisticsInfo5 {
+    flex-grow: 2;
+}
+
+.statisticsInfo2,
+.statisticsInfo3,
+.statisticsInfo4 {
+    flex-grow: 1;
+}
+
+.table {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.proportion {
+    color: red;
+}

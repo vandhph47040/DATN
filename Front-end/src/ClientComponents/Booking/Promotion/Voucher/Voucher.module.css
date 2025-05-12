@@ -1,0 +1,22 @@
+.promotionInput {
+    margin-top: 20px;
+}
+
+.title {
+    margin-bottom: 5px;
+}
+
+.warning {
+    display: block;
+    font-size: 14px;
+    color: red;
+    margin-top: 5px;
+}
+
+.voucherInfo {
+    margin-left: 15px;
+}
+
+.detailVoucher {
+    font-weight: 700;
+}

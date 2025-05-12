@@ -1,0 +1,69 @@
+.seatsInfoContainer {
+    background-color: #e7e6e6;
+    margin-top: 32px;
+    padding: 6px 5px 10px;
+}
+
+.bookingSeatsInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.warnning {
+    color: red;
+    text-align: center;
+    border-bottom: 1px solid #8c8c8c;
+    padding-bottom: 10px;
+}
+
+.flexBooking {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    max-width: 280px;
+    justify-content: space-between;
+}
+
+.bookingSeats {
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+}
+
+.seatsBooked {
+    background-color: white;
+    border: 1px solid white;
+}
+
+.bookingSeatsName {
+    font-size: 13px;
+}
+
+.seatsNormal {
+    border: 2px solid #8c8c8c;
+    background-color: #8c8c8c;
+}
+
+.seatsMaintenance {
+    background-color: #41458e;
+    border: 2px solid #41458e;
+}
+
+.seatsInfo {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    width: 130px;
+}
+
+.seatsVIP {
+    border: 2px solid #1890ff;
+    background-color: #1890ff;
+}
+
+.seatSweetbox {
+    border: 2px solid #f5222d;
+    background-color: #f5222d;
+}

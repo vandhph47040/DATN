@@ -1,0 +1,133 @@
+.boxMainLeft {
+    margin-top: 40px;
+}
+
+.bookingSeat {
+    margin-top: 20px;
+}
+
+.screen {
+    background-color: #1a1a1a;
+    padding: 12px;
+    text-align: center;
+    color: rgb(202, 202, 202);
+    margin-bottom: 40px;
+    margin-left: 80px;
+    transform: perspective(300px) rotateX(-10deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    width: 80%;
+}
+
+.matrixSeat {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: auto;
+}
+.rowSeats {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.colSeats {
+    width: 30px;
+    text-align: center;
+    font-weight: 500;
+    position: absolute;
+    left: 0;
+}
+
+.vip {
+    color: #1890ff;
+}
+
+.sweetbox {
+    color: #f5222d;
+}
+
+.disabled {
+    position: relative;
+    background-color: #3e3f5b;
+    border: 2px solid #3e3f5b;
+    color: #3e3f5b;
+    pointer-events: none;
+}
+
+.disabled::before {
+    display: inline-block;
+    content: "x";
+    font-size: 18px;
+    color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.seatName {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #8c8c8c;
+    border-radius: 6px;
+    background: transparent;
+    cursor: pointer;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.seatName:hover {
+    background: #52c41a; /* Màu xám nhạt khi hover */
+    border: 1px solid #52c41a;
+    color: white;
+}
+
+.vip {
+    border: 1px solid #1890ff;
+}
+
+.sweetbox {
+    border: 1px solid #f5222d;
+}
+
+.held {
+    border: 1px solid #f19902;
+    background: #f19902;
+    color: white;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.booked {
+    border: 1px solid #a615d2;
+    background: #a615d2;
+    color: white;
+    cursor: not-allowed;
+    pointer-events: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.bookedWithImg {
+    border: 1px solid transparent;
+    color: transparent;
+    background-position: center;
+    background-size: cover;
+    pointer-events: none;
+    user-select: none;
+}
+
+.selected {
+    background: #52c41a;
+    border: 1px solid #52c41a;
+    color: white;
+}
+
+.empty {
+    visibility: hidden;
+}

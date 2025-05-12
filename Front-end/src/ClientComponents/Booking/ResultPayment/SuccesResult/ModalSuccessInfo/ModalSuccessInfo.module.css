@@ -1,0 +1,32 @@
+.main {
+    height: 80px;
+    text-align: center;
+    font-size: 18px;
+    position: relative;
+}
+
+.title {
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.title,
+.sub {
+    z-index: 15;
+    position: relative;
+}
+
+.sub {
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: #0093e9;
+    background-image: linear-gradient(181deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.image {
+    position: absolute;
+    top: -35px;
+    left: -24px;
+}

@@ -1,0 +1,75 @@
+.userDetailContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.userInfo {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.avatarSection {
+  text-align: center;
+}
+
+.avatar {
+  margin-bottom: 16px;
+}
+
+.avatarInput {
+  margin-bottom: 12px;
+  width: 100%;
+}
+
+.uploadButton {
+  width: 100%;
+}
+
+.infoSection {
+  flex: 1;
+}
+
+.infoSection p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+.infoSection strong {
+  color: #333;
+  margin-right: 8px;
+}
+
+.backLink {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.homeLink {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.homeLink:hover {
+  text-decoration: underline;
+}
+
+.loading {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  color: #555;
+}

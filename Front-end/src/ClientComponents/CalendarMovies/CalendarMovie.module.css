@@ -1,0 +1,32 @@
+.calendarDays,
+.calendarNumbers {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.loadingTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.showtimesRender {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendarNumbers {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.groupByRoom {
+  margin-top: 15px;
+}
+
+.noShowtimes {
+  margin-top: 15px;
+  color: red;
+}

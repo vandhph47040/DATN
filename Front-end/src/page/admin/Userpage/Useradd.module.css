@@ -1,0 +1,35 @@
+/* Container chính bao quanh toàn bộ nội dung */
+.userAddContainer {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.containerInner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Tiêu đề */
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+/* Phụ đề */
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+/* Liên kết */
+.homeLink {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.homeLink:hover {
+  text-decoration: underline;
+}

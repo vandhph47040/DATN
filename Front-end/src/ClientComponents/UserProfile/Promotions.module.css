@@ -1,0 +1,176 @@
+/* Promotion Section */
+.promotionSection {
+  padding: 20px;
+}
+
+.promotionTitle {
+  font-size: 24px; /* Tăng kích thước chữ cho tiêu đề */
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #1f2937; /* Màu chữ đậm hơn */
+}
+
+.promotionList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Hiển thị 2 cột */
+  gap: 24px; /* Khoảng cách giữa các thẻ */
+}
+
+.promotionCard {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e8e8e8;
+  border-radius: 12px; /* Bo góc mềm hơn */
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Bóng nhẹ */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng hover */
+}
+
+.promotionCard:hover {
+  transform: translateY(-5px); /* Nâng thẻ lên khi hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Tăng bóng khi hover */
+}
+
+.promotionContent {
+  display: flex;
+  width: 100%;
+}
+
+.promotionLeft {
+  background-color: #ff4d4f; /* Màu đỏ giữ nguyên */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%; /* Tăng chiều rộng phần bên trái */
+  text-align: center;
+}
+
+.discountValue {
+  font-size: 28px; /* Tăng kích thước chữ cho giá trị giảm giá */
+  font-weight: 800;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.condition {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.promotionRight {
+  padding: 20px;
+  flex: 1;
+}
+
+.promotionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Căn chỉnh để badge "Chưa sử dụng" nằm sát trên */
+  margin-bottom: 12px;
+}
+
+.promotionCode {
+  font-size: 18px; /* Tăng kích thước mã khuyến mãi */
+  font-weight: 600;
+  color: #ff4d4f; /* Màu đỏ giống phần bên trái */
+}
+
+.promotionExpiry {
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.promotionStatus {
+  font-size: 12px;
+  color: #1890ff; /* Màu xanh dương */
+  background-color: #e6f7ff; /* Nền xanh nhạt */
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.promotionDescription {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.copyButton {
+  background-color: #fff; /* Nền trắng */
+  border: 1px solid #ff4d4f; /* Viền đỏ */
+  color: #ff4d4f; /* Chữ đỏ */
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.copyButton:hover {
+  background-color: #ff4d4f; /* Nền đỏ khi hover */
+  color: #fff; /* Chữ trắng khi hover */
+  border-color: #ff4d4f;
+}
+
+/* Empty Content */
+.emptyContent {
+  text-align: center;
+  padding: 100px 0;
+  color: #6b7280;
+  background: #fafafa;
+  border-radius: 24px;
+  border: 1px dashed #e5e7eb;
+  margin-top: 40px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out 1s forwards;
+}
+
+.emptyContent p {
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .promotionList {
+    grid-template-columns: 1fr; /* Chuyển về 1 cột trên màn hình nhỏ */
+  }
+
+  .promotionLeft {
+    width: 40%; /* Tăng chiều rộng phần bên trái trên mobile */
+  }
+
+  .discountValue {
+    font-size: 24px; /* Giảm kích thước chữ trên mobile */
+  }
+
+  .condition {
+    font-size: 12px;
+  }
+
+  .promotionCode {
+    font-size: 16px;
+  }
+
+  .promotionDescription {
+    font-size: 13px;
+  }
+}

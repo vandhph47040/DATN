@@ -1,0 +1,61 @@
+body {
+    overflow-x: hidden;
+    font-family: "Mulish", serif;
+}
+
+:root {
+    --primary-color: #a1e3f9;
+    --backgroud-product: #578fca;
+    --border-color: #3674b5;
+    --word-color: #fff;
+    --mainBase-color: #f2f2f2;
+    --normal-rank: #754e1a;
+    --first-rank: #f3c623;
+    --secound-rank: #727d73;
+}
+
+/* chiều rộng cố định hiển thị */
+.main-base {
+    margin: 0 auto;
+    width: calc(100% - 400px);
+    max-width: 1250px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.cliptextTitle {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.cliptext {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 3);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+/* Căn giữa tất cả số trong dropdown của DatePicker */
+.ant-picker-dropdown .ant-picker-cell-inner {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 10px;
+}
+
+/* Đảm bảo số trong time picker (nếu có) cũng căn giữa */
+.ant-picker-time-panel-cell-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Bỏ hover tất cả hàng ngang trong DatePicker */
+.ant-picker-dropdown .ant-picker-cell:hover .ant-picker-cell-inner {
+    background-color: #73777b !important;
+}

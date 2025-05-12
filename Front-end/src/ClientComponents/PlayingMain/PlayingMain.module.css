@@ -1,0 +1,37 @@
+.playingMain {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    row-gap: 70px;
+    margin-top: 40px;
+}
+
+.itemMain {
+    width: 100%;
+}
+
+.item-main:nth-child(4n + 1) {
+    justify-self: start;
+}
+
+.item-main:nth-child(4n) {
+    justify-self: end;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.showMoreBtn {
+    grid-column: span 4;
+    width: 120px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--word-color);
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+    cursor: pointer;
+}
